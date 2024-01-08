@@ -17,8 +17,8 @@ public class Main {
 		
 		Collections.sort(list);
 
-		for(Integer c : list) {
-			sb.append(c).append("\n");
+		for(int i = 0; i < N; i++) {
+			sb.append(list.get(i)).append("\n");
 		}
 		
 		System.out.println(sb);
