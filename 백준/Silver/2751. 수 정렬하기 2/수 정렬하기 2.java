@@ -1,4 +1,3 @@
-/* 백준 2751번 수 정렬하기2 */
 import java.io.*;
 import java.util.*;
 
@@ -16,10 +15,10 @@ public class Main {
 			list.add(Integer.parseInt(br.readLine()));
 		}
 		
-		Collections.sort(list); //list에서 오름차순 정렬
+		Collections.sort(list);
 
-		for(int i = 0; i < N; i++) { // for(int 변수명 : list) for문도 알아둘 것~
-			sb.append(list.get(i)).append("\n"); //리스트에서 값 불러올때 list.get()
+		for(int c : list) {
+			sb.append(c).append("\n");
 		}
 		
 		System.out.println(sb);
