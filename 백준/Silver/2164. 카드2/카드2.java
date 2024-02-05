@@ -21,8 +21,9 @@ public class Main {
 	q.offer(q.poll());
 
 	}
-
-	System.out.println(q.poll());
+    StringBuilder sb = new StringBuilder();
+    sb.append(q.poll());
+	System.out.println(sb);
     }
 
 }
