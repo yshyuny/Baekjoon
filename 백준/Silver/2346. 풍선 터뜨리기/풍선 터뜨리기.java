@@ -36,12 +36,13 @@ public class Main {
             
             // 풍선에 적혀있던 값이 양수인 경우 
             if(num > 0) {
-                for(int i = 0; i < num - 1; i++) { // 앞에서 poll 메소드 사용해서 자동으로 -1 되었기 때문에 num보다 1 작게 이동해야 함
+                for(int i = 0; i < num - 1; i++) { // 앞에서 poll 메소드 사용해서 자동으로 -1 
+                                                    //되었기때문에 num보다 1 작게 이동해야 함
                     dq.addLast(dq.pollFirst());
                 }
             } else {
-                for(int i = 0; i < Math.abs(num); i++) {
-                    dq.addFirst(dq.pollLast());
+                for(int i = 0; i < Math.abs(num); i++) { // 음수일땐 해당값까지 앞으로 보내야해서
+                    dq.addFirst(dq.pollLast());        // -1 안함
                 }
             }
         }
